@@ -1,0 +1,9 @@
+{
+  "name": "ishiko732",
+  "scripts": {
+    "sponsors": "npx sponsorkit"
+  },
+  "keywords": [],
+  "author": "ishiko732",
+  "license": "GNU GENERAL PUBLIC LICENSE v3.0"
+}
