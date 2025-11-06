@@ -3,7 +3,7 @@ name: Update Sponsors
 on:
   schedule:
     # Run daily at 00:00 UTC
-    - cron: '0 0 * * *'
+    - cron: "0 0 * * *"
   workflow_dispatch:
   push:
     branches:
@@ -19,7 +19,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: "20"
 
       - name: Generate Sponsors
         run: npm install sponsorkit@latest && npx sponsorkit
@@ -27,8 +27,12 @@ jobs:
           SPONSORKIT_GITHUB_TOKEN: ${{ secrets.SPONSORKIT_GITHUB_TOKEN }}
           SPONSORKIT_GITHUB_LOGIN: ishiko732
 
-      - name: Commit & Push
-        uses: stefanzweifel/git-auto-commit-action@v5
+      - name: Commit
+        uses: EndBug/add-and-commit@v9
         with:
-          commit_message: 'chore: update sponsors'
-          file_pattern: 'sponsorkit/sponsors.svg'
+          author_name: GitHub Actions
+          author_email: 41898282+github-actions[bot]@users.noreply.github.com
+          message: "chore: update sponsors"
+          add: "sponsors.*"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
