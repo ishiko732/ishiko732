@@ -9,6 +9,7 @@ export default defineConfig({
 
   // Rendering options
   width: 800,
+  formats: ['svg'],
 
   // Sponsor tiers configuration
   tiers: [

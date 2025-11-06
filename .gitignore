@@ -2,5 +2,6 @@
 node_modules/
 .env
 .env.local
-sponsorkit/
 package-lock.json
+.sponsors.json
+.cache.json
