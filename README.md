@@ -19,7 +19,7 @@
 Thanks to all my sponsors!
 
 <p align="center">
-  <a href="https://cdn.jsdelivr.net/gh/ishiko732/ishiko732@main/sponsors.svg">
-    <img src="https://cdn.jsdelivr.net/gh/ishiko732/ishiko732@main/sponsors.svg" alt="Sponsors" />
+  <a href="https://cdn.jsdelivr.net/gh/ishiko732/ishiko732/sponsorkit/sponsors.svg">
+    <img src="https://cdn.jsdelivr.net/gh/ishiko732/ishiko732/sponsorkit/sponsors.svg" alt="Sponsors" />
   </a>
 </p>
