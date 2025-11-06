@@ -19,7 +19,7 @@
 Thanks to all my sponsors!
 
 <p align="center">
-  <a href="https://github.com/sponsors/ishiko732">
+  <a href="https://cdn.jsdelivr.net/gh/ishiko732/ishiko732@main/sponsors.svg">
     <img src="https://cdn.jsdelivr.net/gh/ishiko732/ishiko732@main/sponsors.svg" alt="Sponsors" />
   </a>
 </p>
