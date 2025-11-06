@@ -3,6 +3,9 @@
   "scripts": {
     "sponsors": "npx sponsorkit"
   },
+  "dependencies": {
+    "sponsorkit": "^17.0.0"
+  },
   "keywords": [],
   "author": "ishiko732",
   "license": "GNU GENERAL PUBLIC LICENSE v3.0"

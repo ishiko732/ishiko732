@@ -22,7 +22,7 @@ jobs:
           node-version: '20'
 
       - name: Generate Sponsors
-        run: npx sponsorkit
+        run: npm install sponsorkit@latest && npx sponsorkit
         env:
           SPONSORKIT_GITHUB_TOKEN: ${{ secrets.SPONSORKIT_GITHUB_TOKEN }}
           SPONSORKIT_GITHUB_LOGIN: ishiko732
