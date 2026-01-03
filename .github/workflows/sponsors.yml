@@ -16,13 +16,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - name: Setup Node & pnpm
+        uses: ./.github/actions/setup-node-pnpm
         with:
-          node-version: "20"
+          node-version: 24
 
       - name: Generate Sponsors
-        run: npm install sponsorkit@latest && npx sponsorkit
+        run: pnpm sponsorkit
         env:
           SPONSORKIT_GITHUB_TOKEN: ${{ secrets.SPONSORKIT_GITHUB_TOKEN }}
           SPONSORKIT_GITHUB_LOGIN: ishiko732

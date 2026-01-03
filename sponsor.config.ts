@@ -1,3 +1,4 @@
+import { tierPresets } from 'sponsorkit'
 import { defineConfig, presets } from 'sponsorkit'
 
 export default defineConfig({
@@ -16,26 +17,26 @@ export default defineConfig({
     {
       title: 'Past Sponsors',
       monthlyDollars: -1,
-      preset: presets.xs,
+      preset: tierPresets.xs,
     },
     {
       title: 'Backers',
-      preset: presets.base,
+      preset: tierPresets.base,
     },
     {
       title: 'Sponsors',
       monthlyDollars: 5,
-      preset: presets.medium,
+      preset: tierPresets.medium,
     },
     {
       title: 'Silver Sponsors',
       monthlyDollars: 50,
-      preset: presets.large,
+      preset: tierPresets.large,
     },
     {
       title: 'Gold Sponsors',
       monthlyDollars: 100,
-      preset: presets.xl,
+      preset: tierPresets.xl,
     },
   ],
 })
